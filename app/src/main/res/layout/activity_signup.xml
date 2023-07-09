@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signup"
+    android:background="@drawable/wave__1_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:id="@+id/imageid"
+            android:src="@drawable/img1"
+            android:layout_margin="10dp"
+            >
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/name"
+    android:textSize="20dp"
+
+
+    android:text="Welcome">
+
+</TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/left"
+            android:src="@drawable/prev2"></de.hdodenhof.circleimageview.CircleImageView>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:src="@drawable/img1"
+            android:id="@+id/imgview"
+            android:alpha="1"
+            android:gravity="center"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ProgressBar
+                android:id="@+id/screen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+
+                android:alpha="0"
+
+
+
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/right"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/next"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="25dp"
+
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Connect with Yash!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/insta"
+            android:src="@drawable/insta"
+            android:layout_margin="10dp"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/twitter"
+            android:layout_margin="10dp"
+            android:src="@drawable/twitter" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/textmessage"
+            android:layout_margin="10dp"
+            android:src="@drawable/text" />
+
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/button4"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:layout_gravity="center"
+        android:background="#ffd700">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:text="Log Out"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up!"
+        android:textSize="25dp"
+
+        android:layout_gravity="top"
+
+        android:gravity="center"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:id="@+id/imageview"
+        android:background="@drawable/background"
+        android:src="@drawable/addicon"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+
+        app:boxBackgroundColor="#EAE7E0"
+        android:hint="Enter Unique ID"
+        app:hintTextColor="@color/blue"
+        android:gravity="center"
+        android:id="@+id/uniqueid"
+        app:boxCornerRadiusBottomEnd="17dp"
+        app:boxCornerRadiusBottomStart="17dp"
+        app:boxCornerRadiusTopEnd="17dp"
+        app:boxCornerRadiusTopStart="17dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="280dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/unique"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="17dp"
+        app:boxCornerRadiusTopStart="17dp"
+        app:boxCornerRadiusTopEnd="17dp"
+        app:boxCornerRadiusBottomStart="17dp"
+        app:boxCornerRadiusBottomEnd="17dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+
+            android:text=""
+            android:id="@+id/name"
+            android:gravity="center"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="17dp"
+        app:boxCornerRadiusTopStart="17dp"
+        app:boxCornerRadiusTopEnd="17dp"
+        app:boxCornerRadiusBottomStart="17dp"
+        app:boxCornerRadiusBottomEnd="17dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+
+
+            android:text=""
+            android:gravity="center_horizontal"
+
+            android:id="@+id/age"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        app:boxCornerRadiusTopStart="17dp"
+        app:boxCornerRadiusTopEnd="17dp"
+        app:boxCornerRadiusBottomStart="17dp"
+        app:boxCornerRadiusBottomEnd="17dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text=""
+            android:id="@+id/password"
+            android:gravity="center"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="125dp"
+
+        app:cornerRadius="7dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#396FF8"
+        android:layout_marginBottom="10dp"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/intentsignin"
+        android:textSize="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:text="Have an account? Click Here!" />
+
+
+</LinearLayout>
